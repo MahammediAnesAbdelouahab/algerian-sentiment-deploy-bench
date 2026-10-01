@@ -1,0 +1,21 @@
+| dataset | axis | model | format | macro-F1 (%) | p50 (ms) | size (MB) |
+|---|---|---|---|---|---|---|
+| twifil_clean | latency | SVM-char | scikit-learn | 60.8 | 1.05 | 3.0 |
+| twifil_clean | latency | LR-word+char | scikit-learn | 61.0 | 2.71 | 3.4 |
+| twifil_clean | latency | mE5-small | ONNX int8 | 69.8 | 14.1 | 129.1 |
+| twifil_clean | latency | mE5-small | ONNX int8 per-channel+RR | 69.9 | 15.24 | 129.3 |
+| twifil_clean | latency | DziriBERT | ONNX int8 per-channel+RR | 70.7 | 35.4 | 121.0 |
+| twifil_clean | latency | DziriBERT | ONNX fp32 | 70.8 | 71.8 | 476.1 |
+| twifil_clean | size | SVM-char | scikit-learn | 60.8 | 1.05 | 3.0 |
+| twifil_clean | size | LR-word+char | scikit-learn | 61.0 | 2.71 | 3.4 |
+| twifil_clean | size | DziriBERT | ONNX int8 | 70.5 | 37.26 | 120.6 |
+| twifil_clean | size | DziriBERT | ONNX int8 per-channel+RR | 70.7 | 35.4 | 121.0 |
+| twifil_clean | size | DziriBERT | PyTorch fp32 | 70.8 | 112.24 | 475.9 |
+| youtube | latency | SVM-char | scikit-learn | 76.8 | 1.02 | 10.0 |
+| youtube | latency | MARBERTv2 | ONNX int8 | 79.1 | 34.7 | 158.6 |
+| youtube | latency | DziriBERT | ONNX int8 per-channel+RR | 79.8 | 34.8 | 121.0 |
+| youtube | latency | DziriBERT | ONNX fp32 | 80.2 | 80.05 | 476.1 |
+| youtube | size | SVM-char | scikit-learn | 76.8 | 1.02 | 10.0 |
+| youtube | size | DziriBERT | ONNX int8 | 79.7 | 36.66 | 120.6 |
+| youtube | size | DziriBERT | ONNX int8 per-channel+RR | 79.8 | 34.8 | 121.0 |
+| youtube | size | DziriBERT | PyTorch fp32 | 80.2 | 113.33 | 475.9 |

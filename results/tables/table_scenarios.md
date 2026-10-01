@@ -1,0 +1,8 @@
+| dataset | scenario | best configuration | macro-F1 (%) | size (MB) | p95 (ms) | candidates that fit |
+|---|---|---|---|---|---|---|
+| twifil_clean | Tight budget (≤ 25 MB, p95 ≤ 20 ms) | LR-word+char (scikit-learn) | 61.0 | 3.4 | 3.93 | 3 |
+| twifil_clean | Moderate budget (≤ 150 MB, p95 ≤ 100 ms) | DziriBERT (ONNX int8 per-channel+RR) | 70.7 | 121.0 | 77.43 | 7 |
+| twifil_clean | No constraint | DziriBERT (ONNX fp32) | 70.8 | 476.1 | 155.67 | 19 |
+| youtube | Tight budget (≤ 25 MB, p95 ≤ 20 ms) | SVM-char (scikit-learn) | 76.8 | 10.0 | 1.62 | 3 |
+| youtube | Moderate budget (≤ 150 MB, p95 ≤ 100 ms) | SVM-char (scikit-learn) | 76.8 | 10.0 | 1.62 | 5 |
+| youtube | No constraint | DziriBERT (ONNX fp32) | 80.2 | 476.1 | 215.67 | 19 |

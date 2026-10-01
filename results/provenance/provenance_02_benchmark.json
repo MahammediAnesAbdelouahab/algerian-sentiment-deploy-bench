@@ -1,0 +1,96 @@
+{
+  "created_utc": "2026-10-01T01:26:22+00:00",
+  "smoke_test": false,
+  "run_stages": "ACD",
+  "bench_cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+  "cpu_flags": [
+    "avx2"
+  ],
+  "gpu": null,
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cpu",
+    "transformers": "5.17.0",
+    "onnxruntime": "1.30.0",
+    "scikit-learn": "1.6.1"
+  },
+  "config": {
+    "TRANSFORMERS": {
+      "dziribert": {
+        "hf": "alger-ia/dziribert",
+        "lr": 3e-05
+      },
+      "marbertv2": {
+        "hf": "UBC-NLP/MARBERTv2",
+        "lr": 3e-05
+      },
+      "camelbert_da": {
+        "hf": "CAMeL-Lab/bert-base-arabic-camelbert-da",
+        "lr": 3e-05
+      },
+      "me5_small": {
+        "hf": "intfloat/multilingual-e5-small",
+        "lr": 5e-05
+      }
+    },
+    "SEEDS": [
+      13,
+      42,
+      87
+    ],
+    "EPOCHS": 4,
+    "PATIENCE": 1,
+    "BATCH_SIZE": 32,
+    "MAX_LEN_CAP": 128,
+    "CLASSICAL_GRIDS": {
+      "nb_char": {
+        "alpha": [
+          0.01,
+          0.03,
+          0.1,
+          0.3,
+          1.0
+        ]
+      },
+      "svm_char": {
+        "C": [
+          0.03,
+          0.1,
+          0.3,
+          1.0
+        ]
+      },
+      "lr_word_char": {
+        "C": [
+          0.25,
+          1.0,
+          4.0,
+          16.0,
+          64.0
+        ]
+      }
+    },
+    "BENCH_THREADS": 1,
+    "N_SINGLE": 300,
+    "BENCH_ROUNDS": 3,
+    "BENCH_BATCH": 32,
+    "TIMING_REPEATS": 3,
+    "N_TIMING": 200,
+    "SCENARIOS": {
+      "Tight budget (\u2264 25 MB, p95 \u2264 20 ms)": [
+        25,
+        20
+      ],
+      "Moderate budget (\u2264 150 MB, p95 \u2264 100 ms)": [
+        150,
+        100
+      ],
+      "No constraint": [
+        Infinity,
+        Infinity
+      ]
+    }
+  },
+  "runs_done": 60,
+  "artefacts_benchmarked": 46
+}

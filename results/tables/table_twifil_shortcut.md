@@ -1,0 +1,10 @@
+| model | seeds | acc no-text part (%) | acc text part (%) | acc overall (%) |
+|---|---|---|---|---|
+| Rule: URL/mention only → neutral | - | 98.4 |  |  |
+| NB-char | 1 | 98.7 | 69.0 | 73.0 |
+| SVM-char | 1 | 98.7 | 69.7 | 73.6 |
+| LR-word+char | 1 | 98.4 | 68.6 | 72.6 |
+| DziriBERT | 3 | 98.7 | 77.3 | 80.2 |
+| MARBERTv2 | 3 | 98.6 | 77.1 | 80.0 |
+| CAMeLBERT-DA | 3 | 97.7 | 72.1 | 75.5 |
+| mE5-small | 3 | 99.7 | 76.4 | 79.5 |

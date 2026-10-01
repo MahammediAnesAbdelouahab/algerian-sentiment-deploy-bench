@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper and the original datasets."
+title: "Accuracy Is Not Enough: A Deployment-Aware Benchmark of Algerian Dialect Sentiment Classifiers for CPU Inference (code and data)"
+type: software
+version: 1.0.0
+license: MIT
+authors:
+  - given-names: "Anes Abdelouahab"
+    family-names: "Mahammedi"
+    affiliation: "EEDIS Laboratory, Department of Computer Science, University of Naâma, Algeria"
+    orcid: "https://orcid.org/0009-0000-6765-6870"
+  - given-names: "Abdelghani"
+    family-names: "Bouziane"
+    affiliation: "EEDIS Laboratory, Department of Computer Science, University of Naâma, Algeria"
+    orcid: "https://orcid.org/0000-0002-8583-3858"
+  - given-names: "Yasser"
+    family-names: "Yahiaoui"
+    affiliation: "EEDIS Laboratory, Department of Computer Science, University of Naâma, Algeria"
+    orcid: "https://orcid.org/0009-0006-4435-4734"
+  - given-names: "Djelloul"
+    family-names: "Bouchiha"
+    affiliation: "EEDIS Laboratory, Department of Computer Science, University of Naâma, Algeria"
+    orcid: "https://orcid.org/0000-0001-7314-4329"
+keywords:
+  - Algerian Arabic dialect
+  - sentiment analysis
+  - efficient inference
+  - int8 quantisation
+  - benchmarking
+preferred-citation:
+  type: article
+  title: "Accuracy Is Not Enough: A Deployment-Aware Benchmark of Algerian Dialect Sentiment Classifiers for CPU Inference"
+  authors:
+    - given-names: "Anes Abdelouahab"
+      family-names: "Mahammedi"
+      orcid: "https://orcid.org/0009-0000-6765-6870"
+    - given-names: "Abdelghani"
+      family-names: "Bouziane"
+      orcid: "https://orcid.org/0000-0002-8583-3858"
+    - given-names: "Yasser"
+      family-names: "Yahiaoui"
+      orcid: "https://orcid.org/0009-0006-4435-4734"
+    - given-names: "Djelloul"
+      family-names: "Bouchiha"
+      orcid: "https://orcid.org/0000-0001-7314-4329"
+  journal: "Review of Computer Engineering Research"
+  year: 2026
+  notes: "Submitted; volume, pages and DOI to be added after publication."
